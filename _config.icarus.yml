@@ -3,7 +3,8 @@ version: 4.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /img/logo.svg
+# logo: /img/logo.svg
+
 # Page metadata configurations
 head:
     # URL or path to the website's icon
@@ -95,13 +96,13 @@ head:
         - ''
     # URL or path to the website's RSS atom.xml
     rss: 
+
 # Page top navigation bar configurations
 navbar:
     # Naviagtion menu items
     menu:
         Home: /
         Archives: /archives
-        Categories: /categories
         Tags: /tags
         About: /about
     # Links to be shown on the right of the navigation bar
@@ -109,6 +110,7 @@ navbar:
         GitHub:
             icon: fab fa-github
             url: 'https://github.com/armindojr'
+
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
@@ -119,6 +121,7 @@ footer:
         Attribution 4.0 International:
             icon: fab fa-creative-commons-by
             url: 'https://creativecommons.org/licenses/by/4.0/'
+
 # Article related configurations
 article:
     # Code highlight settings
@@ -140,16 +143,19 @@ article:
         Attribution:
             icon: fab fa-creative-commons-by
             url: 'https://creativecommons.org/licenses/by/4.0/'
+
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
     type: insight
+
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 # comment:
 #     type: disqus
 #     # Disqus shortname
 #     shortname: ''
+
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 # donates:
@@ -185,12 +191,14 @@ search:
 #         type: wechat
 #         # Wechat qrcode image URL
 #         qrcode: ''
+
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 # share:
 #     type: sharethis
 #     # URL to the ShareThis share plugin script
 #     install_url: ''
+
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -202,6 +210,7 @@ sidebar:
     right:
         # Whether the sidebar sticks to the top when page scrolls
         sticky: false
+
 # Sidebar widget configurations
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
@@ -288,6 +297,7 @@ widgets:
     #     client_id: ''
     #     # AdSense AD unit ID
     #     slot_id: ''
+
 # Plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
 plugins:
@@ -363,6 +373,7 @@ plugins:
     # twitter_conversion_tracking:
     #     # Twitter Pixel ID
     #     pixel_id: 
+
 # CDN provider settings
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:

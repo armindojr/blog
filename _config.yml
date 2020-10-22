@@ -1,17 +1,22 @@
-title: Armindo jr - Page
+# Site
+title: Armindo jr - Blog
 subtitle: ''
 description: My personal space to share insights and techniques about programming and qa
 keywords: 'blog, github, code, qa, quality'
 author: Armindo Junior
-language: en
+language: pt-BR
 timezone: America/Sao_Paulo
+
+# Url
 url: 'https://armindojr.github.io/blog/'
-root: /
+root: /blog/
 permalink: ':year/:month/:title/'
 permalink_defaults: null
 pretty_urls:
   trailing_index: false
   trailing_html: false
+
+# Directory
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -20,6 +25,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: ':lang'
 skip_render: null
+
+# Writing
 new_post_name: ':title.md'
 default_layout: post
 titlecase: false
@@ -48,18 +55,28 @@ index_generator:
   path: ''
   per_page: 10
   order_by: '-date'
+
+# Category & tag
 default_category: uncategorized
 category_map: null
 tag_map: null
 meta_generator: true
+
+# Date / Time format
 date_format: DD-MMM-YY
 time_format: 'HH:mm:ss'
 updated_option: mtime
+
+# Pagination
 per_page: 10
 pagination_dir: page
 include: null
 exclude: null
 ignore: null
+
+# Extensions
 theme: icarus
+
+# Deployment
 deploy:
   type: ''

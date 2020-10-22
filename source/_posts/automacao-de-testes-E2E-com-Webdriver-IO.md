@@ -1,7 +1,7 @@
 ---
 title: Automação de testes E2E com Webdriver.IO
 date: 2019-05-10 12:00:00
-tags:
+tags: [automation, wdio, e2e]
 ---
 **Objetivos deste guia**
 Este guia não abordará métodos de como deixar o código limpo, organização da suíte de testes e utilização de serviços externos ao core que ajudam nos testes. O principal objetivo é mostrar os primeiros passos com a automação de testes E2E com o webdriver.io.

@@ -1,7 +1,7 @@
 ---
 title: Paralelização de testes com Cypress
 date: 2020-06-03 12:00:00
-tags:
+tags: [cypress, parallel, automation]
 ---
 **Qual o motivo de paralelizar testes ?**
 Recentemente fiz parte de um projeto onde tínhamos diversas pessoas que criavam e automatizavam cenários de testes no mesmo repositório para testes do tipo regressivo, aos poucos percebemos que nosso repositório de testes aumentou exponencialmente seu tempo de execução dentro do CI, e com isso estudamos diversas formas de melhorar esse tempo. Com todo esse background, decidimos optar por incluir a execução de testes de forma paralela.
