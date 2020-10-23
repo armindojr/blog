@@ -1,7 +1,7 @@
 ---
 title: Paralelização de testes com Cypress
 date: 2020-06-03 12:00:00
-tags: [cypress, parallel, automation]
+tags: [cypress, paralelizacao, automacao]
 ---
 **Qual o motivo de paralelizar testes ?**
 Recentemente fiz parte de um projeto onde tínhamos diversas pessoas que criavam e automatizavam cenários de testes no mesmo repositório para testes do tipo regressivo, aos poucos percebemos que nosso repositório de testes aumentou exponencialmente seu tempo de execução dentro do CI, e com isso estudamos diversas formas de melhorar esse tempo. Com todo esse background, decidimos optar por incluir a execução de testes de forma paralela.
@@ -31,11 +31,11 @@ Como já foi comentado, a implementação dessa funcionalidade demandou apenas e
 
 **Jenkinsfile**
 
-//imagem 1
+{% img https://miro.medium.com/max/778/1*_32i7aHU5af7ScsPoBlUSQ.jpeg %}
 
 Para utilizar a execução paralela do Jenkins é bem simples, quebramos as execuções dentro de contêineres diferentes e colocamos o comando para execução do Cypress dentro bloco de cada contêiner como na imagem acima.
 
-//imagem 2
+{% img https://miro.medium.com/max/468/1*YSk4E0hYRh2YdwD-uUfqAQ.jpeg %}
 
 Nessa parte do código devemos realizar a configuração do report Mocha Awesome onde toda a magia acontece, aqui você configura toda as variáveis e caminhos para que o report seja gerado corretamente e não seja perdido nenhum step.
 
@@ -43,28 +43,28 @@ Colocamos abaixo algumas imagens para exemplificar a forma que o Jenkins exibe e
 
 **Pagina inicial do Job**
 
-//imagem 3
+{% img https://miro.medium.com/max/875/1*gcluuUWQRaTQjUv01O7TTA.png %}
 
 **Pagina de apresentação dos estágios pelo Blue Ocean**
 
-//imagem 4
+{% img https://miro.medium.com/max/875/1*6nppYbz6pUa6hyfAxOzm6Q.png %}
 
 **Visualização do console de execução no POD A**
 
-//imagem 5
+{% img https://miro.medium.com/max/875/1*CIFM3EwYGoz1Ph24MMMehQ.png %}
 
 **Visualização do console de execução no POD B**
 
-//imagem 6
+{% img https://miro.medium.com/max/875/1*P8W_rB4MvqIIoz-ZRBr3Qg.png %}
 
 **Como o report fica com a execução de forma paralela**
 
-//imagem 7
+{% img https://miro.medium.com/max/875/1*qkYlV2Fo9P25MNjf3AHkGg.png %}
 
 **Resultados da implementação**
 Abaixo está uma imagem onde apresentamos os resultados da nossa implementação de paralelização dentro do próprio Jenkins. Claramente percebemos que a execução de testes nesse modo demonstra um ganho de quase a metade do tempo nas execuções.
 
-//imagem 8
+{% img https://miro.medium.com/max/875/1*rQa6NKsROA73KqtS2o-gow.png %}
 
 Caso queiram estudar a sintaxe de estágios em paralelo no Jenkins segue um exemplo interessante:
 

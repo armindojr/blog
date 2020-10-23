@@ -1,3 +1,9 @@
+navbar:
+    menu:
+        home: Home
+        archives: Archives
+        tags: Tags
+        about: About
 common:
     archive:
         one: 'Archive'

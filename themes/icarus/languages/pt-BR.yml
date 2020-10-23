@@ -1,3 +1,9 @@
+navbar:
+    menu:
+        home: Início
+        archives: Arquivos
+        tags: Tags
+        about: Sobre
 common:
     archive:
         one: 'Arquivo'

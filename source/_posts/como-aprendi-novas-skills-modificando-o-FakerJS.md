@@ -1,7 +1,7 @@
 ---
 title: Como aprendi novas skills modificando o FakerJS
 date: 2020-05-26 12:00:00
-tags: [pure, faker, data-generation, fake, automation]
+tags: [pure, faker, geracao-dados, mock, fake, automacao]
 ---
 **O que é o pure-gen**
 O pure-gen é basicamente um gerador de dados falsos para preenchimento de formulários de teste baseados em uma localidade do mundo. Assim podendo gerar nomes, e-mails, documentos e outras funcionalidades que são únicas de cada país.

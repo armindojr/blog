@@ -89,7 +89,7 @@ module.exports = cacheComponent(Navbar, 'common.navbar', props => {
         Object.keys(navbar.menu).forEach(name => {
             const url = url_for(navbar.menu[name]);
             const active = isSameLink(url, pageUrl);
-            menu[name] = { url, active };
+            menu[_p(`navbar.menu.${name}`)] = { url, active };
         });
     }
 

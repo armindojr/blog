@@ -1,7 +1,7 @@
 ---
 title: O paradoxo do pesticida em automação de testes
 date: 2019-02-11 12:00:00
-tags: [automation, proccess]
+tags: [automacao, processo]
 ---
 
 De acordo com o syllabus do CTFL, certificação que garante conhecimentos básicos da área de qualidade, um dos sete princípios do teste é o Paradoxo do pesticida. Mas afinal, o que é este paradoxo e para que serve ?

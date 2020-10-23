@@ -1,7 +1,7 @@
 ---
 title: Automação de testes E2E com Webdriver.IO
 date: 2019-05-10 12:00:00
-tags: [automation, wdio, e2e]
+tags: [automacao, wdio, e2e]
 ---
 **Objetivos deste guia**
 Este guia não abordará métodos de como deixar o código limpo, organização da suíte de testes e utilização de serviços externos ao core que ajudam nos testes. O principal objetivo é mostrar os primeiros passos com a automação de testes E2E com o webdriver.io.
@@ -41,11 +41,11 @@ O que é necessário ter instalado :
 
 O primeiro passo é criar uma pasta para colocar seu projeto e a abrir no seu editor de código de sua preferência. Durante esse guia será utilizado o **Visual Studio Code**
 
-//imagem 1
+{% img https://miro.medium.com/max/875/1*YycTbehHy8YINMpRoCsFvA.png %}
 
 Será utilizado o terminal que é possível abrir no próprio VSCode.
 
-//imagem 2
+{% img https://miro.medium.com/max/875/1*5z2QZ-tKK4ywWnTFghywlA.png %}
 
 Em seguida, será criado o `package.json` onde vai ficar armazenado todos os pacotes deste projeto. Use o comando no terminal :
 
@@ -53,7 +53,7 @@ Em seguida, será criado o `package.json` onde vai ficar armazenado todos os pac
 npm init -y
 ```
 
-//imagem 3
+{% img https://miro.medium.com/max/875/1*an_Hz6XqIi4YZ2Za5dbPLA.png %}
 
 Agora, serão instalados os pacotes e armazenados dentro do `package.json` para a utilização posterior em outras máquinas. Instale o Webdriver.IO e o CLI dele com o comando no terminal :
 
@@ -61,7 +61,7 @@ Agora, serão instalados os pacotes e armazenados dentro do `package.json` para 
 npm i —-save-dev webdriverio @wdio/cli
 ```
 
-//imagem 4
+{% img https://miro.medium.com/max/875/1*X6c5Qh1Z-1O9idRC8vsOqw.png %}
 
 Inicialize o projeto na pasta raiz que foi aberta no editor de texto com o comando no terminal :
 
@@ -69,7 +69,7 @@ Inicialize o projeto na pasta raiz que foi aberta no editor de texto com o coman
 .\node_modules\.bin\wdio config
 ```
 
-//imagem 5
+{% img https://miro.medium.com/max/875/1*MXsO7bA4Ofmaf1tzLhrcRw.gif %}
 
 As seguintes perguntas vão aparecer no terminal :
 > P: Where should your tests be launched? (Onde os testes vão ser executados ?)
@@ -103,17 +103,17 @@ R: http://localhost
 
 Após essa série de questionamentos sobre a configuração é criado o seguinte arquivo :
 
-//imagem 6
+{% img https://miro.medium.com/max/875/1*0HzXbKQmhohLmDc5O8s05g.png %}
 
 Agora crie a pasta `spec/`
 
-//imagem 7
+{% img https://miro.medium.com/max/875/1*0HzXbKQmhohLmDc5O8s05g.png %}
 
 Dentro dessa pasta irão ficar todas as suítes de testes.
 
 Crie e abra um arquivo com o nome `home.js` dentro da pasta `spec/`.
 
-//imagem 8
+{% img https://miro.medium.com/max/875/1*3trq-RoTWz3rH7SR4OltRw.png %}
 
 Agora descreva os testes usando a sintaxe do Jasmine (Para saber mais basta entrar na documentação oficial) conforme mostra o guia abaixo.
 
@@ -121,7 +121,7 @@ Resumidamente : O describe serve como separação de cada cenário do teste e o 
 
 Descreva primeiro o cenário onde irá acessar a página inicial.
 
-//imagem 9
+{% img https://miro.medium.com/max/875/1*K33OJX55z_G9tM6TYGpj3w.png %}
 
 Depois de escrito, execute o teste no terminal, utilize o comando abaixo :
 
@@ -131,19 +131,19 @@ Depois de escrito, execute o teste no terminal, utilize o comando abaixo :
 
 Assim o browser será aberto (no caso o firefox pois ainda não foi configurado nenhum outro).
 
-//imagem 10
+{% img https://miro.medium.com/max/875/1*GISyFB9g9Jc1Wxi2VV88Ng.png %}
 
 “Poxa, mas eu queria rodar meus testes no chrome, como faço ?”
 
 Simples, é só alterar o `wdio.conf.js` com as seguintes opções :
 
-//imagem 11
+{% img https://miro.medium.com/max/875/1*ZLwdVuBaWiAKN3tfFPZn7A.png %}
 
 “Mas agora o chrome abre, porém não é em tela cheia …”
 
 Para isso, é necessário passar os seguintes argumentos para o webdriver :
 
-//imagem 12
+{% img https://miro.medium.com/max/875/1*LloAMm7hJYfKAK4wzVBOlA.png %}
 
 Para incrementar um pouco o teste … Crie um cenário onde é realizada uma busca, clique em um resultado e verifique o carregamento.
 
@@ -151,31 +151,31 @@ Antes de dar forma ao teste, é recomendado a leitura de como criar seletores em
 
 Assim, incremente os passos do cenário :
 
-//imagem 13
+{% img https://miro.medium.com/max/875/1*Y8R2J76GzkpratwKs0_NFg.png %}
 
 Os lugares onde ficaram espaços entre as funções, coloque as ações em si. Elas são compostas da seguinte forma :
 
-//imagem 14
+{% img https://miro.medium.com/max/434/0*oF46ZZ51JFx9nNlL %}
 
-//imagem 15
+{% img https://miro.medium.com/max/875/1*MVuRKlwZZVVpx7AiZclw6g.png %}
 
 Perceba que no teste implementado existem funções além das que foram explicadas anteriormente :
 
-//imagem 16
+{% img vertical-align: middle; https://miro.medium.com/max/321/0*Va670NMcPlyEhgM3 %}
 
 Esse parece o seletor já utilizado, porém está retornando um Array com os itens da página, o índice mostra qual item desse Array será feita a interação e as ações são as mesmas de um seletor comum.
 
-//imagem 17
+{% img https://miro.medium.com/max/189/0*cHcG1yjFzYXg_0WO %}
 
 O browser é um objeto que possui ações específicas baseadas no próprio navegador, na imagem acima é retornado a title da página acessada.
 
-//imagem 18
+{% img https://miro.medium.com/max/214/0*m8VAcIyqDRuU-atQ %}
 
 Funcionalidade do framework semântico (jasmine), o expect serve para realizar uma verificação que um determinado item possui algo ou contém algo.
 
 Executando o script novamente, todos os resultados são exibidos no terminal indicando o que foi executado e o tempo de execução.
 
-//imagem 19
+{% img https://miro.medium.com/max/875/1*u0hWIl2cNU8FUdsz0O_pwA.png %}
 
 **Considerações finais**
 O guia aborda apenas tópicos básicos para a primeira implementação de uma automação em JS com o Webdriver.io, é recomendado que todos os leitores se aprofundem nas funcionalidades extras que a ferramenta possui, tais como : **execução de tasks com o grunt, relatórios de execução com melhor apresentação do allure, utilização das ultimas implementações do ECMAscript com o babel, testes de regressão visual** e outras funcionalidades.
